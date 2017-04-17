@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/txt_white">
+    <TextView
+        android:id="@+id/tv_use_date"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_body_material"
+        android:textColor="@color/txt_black"
+        android:padding="10dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/use_date"/>
+
+    <TextView
+        android:id="@+id/tv_washCar_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/washCar_id"
+        android:textColor="@color/txt_black"
+        android:maxLines="2"
+        android:textSize="@dimen/text_size_body_material" />
+
+    <TextView
+        android:id="@+id/tv_use_time"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_body_material"
+        android:textColor="@color/txt_black"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="@string/use_time"/>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/money"
+        android:textColor="@color/txt_black"
+        android:maxLines="2"
+        android:textSize="@dimen/text_size_body_material" />
+</LinearLayout>

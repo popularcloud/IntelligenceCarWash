@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg_guide">
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circular_translucent_blue_fill"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_subhead_material"
+        android:textColor="@color/txt_white"
+        android:text="立即体验"/>
+</RelativeLayout>

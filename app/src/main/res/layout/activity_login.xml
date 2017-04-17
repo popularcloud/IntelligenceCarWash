@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/include_common_actionbar" />
+
+    <com.dlc.intelligencecarwash.widget.ExtendedEditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="@color/txt_white"
+        android:drawableLeft="@mipmap/ic_phone"
+        android:drawablePadding="10dp"
+        android:hint="@string/please_input_phone_number"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:textColorHint="@color/txt_gray"
+        android:textSize="@dimen/text_size_subhead_material" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.dlc.intelligencecarwash.widget.ExtendedEditText
+            android:id="@+id/et_verification_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/txt_white"
+            android:drawableLeft="@mipmap/ic_code"
+            android:drawablePadding="10dp"
+            android:hint="@string/please_input_phone_verification_code"
+            android:padding="10dp"
+            android:textColorHint="@color/txt_gray"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_subhead_material" />
+
+        <TextView
+            android:id="@+id/tv_get_verification_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/get_verification_code"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/text_size_subhead_material"
+                android:textColor="@color/txt_white"
+                android:gravity="center"
+                android:background="@drawable/send_code_bg"
+                />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_caption_material"
+            android:textColor="@color/txt_gray"
+            android:text="@string/service_clause01"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_caption_material"
+            android:text="@string/service_clause02"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/SubmitButton"
+        android:text="@string/ok"/>
+</LinearLayout>

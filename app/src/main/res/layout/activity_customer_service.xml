@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/include_common_actionbar" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="工作日: 周一至周五 09:00-20:00"
+        android:textSize="@dimen/text_size_medium_material"
+        android:gravity="center_vertical"
+        android:background="@color/txt_white"
+        android:textColor="@color/txt_black"/>
+    <RelativeLayout
+        android:id="@+id/rl_call_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/txt_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="客服电话"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_medium_material"
+            android:textColor="@color/txt_black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="13659889666"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_medium_material"
+            android:textColor="@color/txt_black"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_tele"
+            />
+    </RelativeLayout>
+</LinearLayout>
